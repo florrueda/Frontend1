@@ -1,47 +1,136 @@
+/*****HEADER*****/
 header {
     background-color: black;
     font-size: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-.header {
+
+.menuidiomas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 0px 90px;
+}
+
+select {
+    background-color: black;
+    color:white;
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0px 25px 0px 0px;
+    border: transparent;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 50;
+    align-items: center;
+}
+
+.bar-nav {
     background-color: #F0A83E;
     color: white;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: flex-start;
 }
+
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 50;
+    align-items: center;
+    height: 100px;
+
+}
+
+a{  
+    color:white;
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 45px 0px 0px;
+}
+
+/*****MIDDLE*****/
+
 .banner {
     background: url('../img/bowlbackground.png');
     background-size: cover;
     height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.banner2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     background-color: white;
-    font-size: normal;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    text-align: center;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 h2 {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
+
 .boton {
     color: white;
     background-color: #F0A83E;
     border-radius: 5px;
-    margin: auto;
-    display: inline-block;
-    position: absolute;
-    width: 95px;
-    height: 19px;
-    left: 790px;
-    top: 349px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-.boton2{
+
+.boton2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: auto;
+}
+
+.menuprod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -49,17 +138,75 @@ h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-div{
+
+p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
+/*****PRODUCTOS*****/
+
 .productos{
-    background-color: #FBFAF6;
+    display: flex;
+    justify-content: center;
 }
 
-h4{
+.producto1 {
+    background: url('../img/churrasquito.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FBFAF6;
+    width: 80px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3C2313;
+}
+
+.producto2 {
+    background: url('../img/comedero.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FBFAF6;
+    width: 80px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3C2313;
+}
+
+.producto3 {
+    background: url('../img/Huesito.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FBFAF6;
+    width: 80px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -73,7 +220,8 @@ h4{
     color: #F0A83E;
     height: 19,64px;
 }
-
+/*****FOOTER*****/
+ 
 .footer {
     background-color: #3C2313;
     font-family: 'Roboto', sans-serif;
@@ -90,6 +238,7 @@ h4{
     color:#8A8787;
     line-height: 11,72px;
 }
+
 #derechos {
     background-color: #222222;
     font-size: 10px;

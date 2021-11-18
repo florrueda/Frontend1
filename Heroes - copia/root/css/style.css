@@ -1,0 +1,110 @@
+/*HEADER*/
+
+.descuentos {
+    background: #1CD1B0;
+    height: 38px;
+    font-family: Roboto;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    background: #00669F;
+    height: 101px;
+    color: black;
+    font-family: Roboto;
+    font-size: 40px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*CARDS*/
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    background-color: #F3F3F3;
+}
+
+.fondo{
+    background: url('../img/fondobatman2.png');
+    width: 300px;
+    height: 193px;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo {
+    background: url('../img/batman.png');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 118px;
+    border-radius: 50%;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.boton{
+    width: 128.78px;
+    height: 48.52px;
+    background: #00669F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondo2{
+    background: url('../img/fondoharley.png');
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 193px;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo2 {
+    background: url('../img/harley.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 120px;
+    height: 118px;
+    border-radius: 50%;
+}
