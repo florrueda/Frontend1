@@ -1,4 +1,12 @@
-/*****HEADER*****/
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
 header {
     background-color: black;
     font-size: 10px;
@@ -47,17 +55,22 @@ select {
     flex-grow: 50;
     align-items: center;
     height: 100px;
-
 }
 
-a{  
+.enlaces a{  
     color:white;
     font-family: Roboto, 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    padding: 0px 45px 0px 0px;
+    padding-right: 45px;
+}
+
+.patita {
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 /*****MIDDLE*****/
@@ -76,16 +89,9 @@ a{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
-
-.banner3 {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 180px;
 }
 
 h1 {
@@ -220,8 +226,71 @@ p{
     color: #F0A83E;
     height: 19,64px;
 }
-/*****FOOTER*****/
- 
+
+/*FORMULARIO CONTACTO*/
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 500px;
+}
+
+.datos h2{
+    font-size: 30px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 20px;
+}
+
+.datos div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.datos input {
+    height: 60px;
+    background-color: black;
+    color: white;
+    width: 600px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 23.011px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+#reset {
+    background-color: grey;
+}
+
+#enviar {
+    background-color: #F0A83E;
+}
+/*FOOTER*/
+
 .footer {
     background-color: #3C2313;
     font-family: 'Roboto', sans-serif;

@@ -12,81 +12,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="menuidiomas">
-            <p>Grandes ofertas en comederos</p>
-            <div class="idiomas">
-                <select>
-                    <option value="1">Español</option>
-                    <option value="1">English</option>
-                </select>
-                <select>
-                    <option value="1">$ARG</option>
-                    <option value="1">USD</option>
-                </select>
-            </div>
-        </div>
 
-        <div class="bar-nav"> 
-            <img src="img\Logo.png">
-            <div class="enlaces">
-                <span><i class="fas fa-paw"></i><a href="">Categorias</a></span>
-                <span><i class="fas fa-paw"></i><a href="">Pets</a></span>
-                <span><i class="fas fa-paw"></i><a href="">Nosotros</a></span>
-                <span><i class="fas fa-paw"></i><a href="">Contactanos</a></span>
-            </div>
-        </div>
-    </header>
-    
-    <div class="banner">
-        <div class="banner2">
-            <h1>¡Es un placer tenerte aquí!</h1>
-        <div class="banner3">
-            <h2>¡Comederos en descuento!</h2>
-        <div class="boton">
-            <p class="boton2" href="">COMEDEROS</p>
-        </div>
-        </div>
+<header>
+    <div class="menuidiomas">
+        <p>Grandes ofertas en comederos</p>
+        <div class="idiomas">
+            <select>
+                <option value="1">Español</option>
+                <option value="1">English</option>
+            </select>
+            <select>
+                <option value="1">$ARG</option>
+                <option value="1">USD</option>
+            </select>
         </div>
     </div>
 
-    <div class="menuprod">
-        <img src="img\pawprint.png">
-        <h3>Productos Destacados</h2>
-        <p>Comederos - Accesorios - Comida</p>
+    <div class="bar-nav"> 
+        <img src="img\Logo.png">
+        <ul type="none" class="enlaces">
+            <li><i class="fas fa-paw patita"></i><a href="">Categorias</a></li>
+            <li><i class="fas fa-paw"></i><a href="">Pets</a></li>
+            <li><i class="fas fa-paw"></i><a href="">Nosotros</a></li>
+            <li><i class="fas fa-paw"></i><a href="">Contactanos</a></li>
+        </ul>
     </div>
+</header>
     
-    <div class="productos">
+<div class="banner">
+    <div class="banner2">
+        <h1>¡Es un placer tenerte aquí!</h1>
+        <h2>¡Comederos en descuento!</h2>
+    <div class="boton">
+        <p class="boton2" href="">COMEDEROS</p>
+    </div>
+    </div>
+</div>
 
+<div class="menuprod">
+    <img src="img\pawprint.png">
+    <h3>Productos Destacados</h2>
+    <p>Comederos - Accesorios - Comida</p>
+</div>
+    
+<div class="productos">
     <div class="producto1">
         <span>Juguete Churrasquito</span>
         <span class="precios">$150</span>
     </div>  
-
     <div class="producto2">
         <span>Comedero para perro</span>
         <span class="precios">$250</span>
-    </div>  
-    
+    </div>     
     <div class="producto3">
         <span>Juguete Huesito</span>
         <span class="precios">$650</span>
     </div> 
-
-    </div>
+</div>
     
-    <footer>
-        <section class="footer">
+<div class="form">
+    <section class="datos">
+        <h2>Contactanos</h2>
+        <div>
+            <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+        </div>
+        <div>
+            <input type="email" name="Correo electronico" placeholder="Correo electronico">
+        </div>
+        <div>
+            <input type="number" name="Telefono" placeholder="Telefono">
+        </div>
+    </section>
+    <div class="botones">
+        <input type="reset" value="Resetear" id="reset">
+        <input type="submit" value="Enviar" id="enviar">
+    </div>
+</div>
+
+<footer>
+    <section class="footer">
         <p><i class="fas fa-map-marker-alt"></i>Localidad</p>
         <p class="datoscontacto">Calle-Provincia</p>
         <p><i class="fas fa-phone-alt"></i>Teléfono</p>
         <p class="datoscontacto">Número de Teléfono</p>
         <p><i class="fas fa-envelope"></i>Correo Electrónico</p>
         <p class="datoscontacto">Dirección de correo</p>
-        </section>
-        <div id="derechos">
+    </section>
+    <div id="derechos">
         <p>Todos los derechos reservados Front End</p>
-        </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
