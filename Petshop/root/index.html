@@ -29,9 +29,9 @@
     </div>
 
     <div class="bar-nav"> 
-        <img src="img\Logo.png">
+        <img src="img\Logo.png" alt="Imagen del Logo">
         <ul type="none" class="enlaces">
-            <li><i class="fas fa-paw patita"></i><a href="">Categorias</a></li>
+            <li><i class="fas fa-paw"></i><a href="">Categorias</a></li>
             <li><i class="fas fa-paw"></i><a href="">Pets</a></li>
             <li><i class="fas fa-paw"></i><a href="">Nosotros</a></li>
             <li><i class="fas fa-paw"></i><a href="">Contactanos</a></li>
@@ -70,34 +70,53 @@
     </div> 
 </div>
     
-<div class="form">
+<form class="form" action="" method="POST">
     <section class="datos">
-        <h2>Contactanos</h2>
+        <h2>Contáctanos</h2>
         <div>
             <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
         </div>
         <div>
-            <input type="email" name="Correo electronico" placeholder="Correo electronico">
+            <input type="email" name="Correo electronico" placeholder="Ingresá tu correo electrónico">
         </div>
         <div>
-            <input type="number" name="Telefono" placeholder="Telefono">
+            <input type="number" name="Telefono" placeholder="Teléfono">
         </div>
     </section>
     <div class="botones">
         <input type="reset" value="Resetear" id="reset">
         <input type="submit" value="Enviar" id="enviar">
     </div>
+</form>
+
+<div class="suscripcion">
+    <p><i class="far fa-envelope"></i>Suscríbete para más novedades</p>
+    
+    <form action="" method="POST">
+        <div class="boton-suscripcion">
+        <input type="email" name="Correo electronico" placeholder="Ingresá tu correo electrónico" id="email">
+        <input type="submit" value="Suscribirme" id="suscribirme">
+        </div>
+    </form>
+
 </div>
 
+
 <footer>
-    <section class="footer">
-        <p><i class="fas fa-map-marker-alt"></i>Localidad</p>
-        <p class="datoscontacto">Calle-Provincia</p>
-        <p><i class="fas fa-phone-alt"></i>Teléfono</p>
-        <p class="datoscontacto">Número de Teléfono</p>
-        <p><i class="fas fa-envelope"></i>Correo Electrónico</p>
-        <p class="datoscontacto">Dirección de correo</p>
-    </section>
+    <div class="infocontacto">
+        <section class="footer">
+            <p>Localidad</p>
+            <p class="datoscontacto">Calle-Provincia</p>
+            <p></i>Teléfono</p>
+            <p class="datoscontacto">Número de Teléfono</p>
+            <p></i>Correo Electrónico</p>
+            <p class="datoscontacto">Dirección de correo</p>
+        </section>
+        <div>
+            <img src="img\logofoot.png" alt="Imagen del Logo">
+        </div>
+    </div>
+    
     <div id="derechos">
         <p>Todos los derechos reservados Front End</p>
     </div>

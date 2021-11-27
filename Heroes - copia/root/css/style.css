@@ -82,6 +82,16 @@ ul a{
     align-items: flex-end;
 }
 
+.fondo::before{
+    content: '\2665';
+    color: red;
+    font-size: 40px;
+    position: relative;
+    top: -76%;
+    left: 62%;
+}
+
+
 .logo {
     background: url('../img/batman.png');
     background-repeat: no-repeat;
@@ -145,6 +155,7 @@ ul a{
     border-radius: 50%;
 }
 
+
 /*LOGIN*/
 h1 {
     font-family: 'Inter', sans-serif;
@@ -189,6 +200,18 @@ h1 {
     font-weight: bold;
     width: 620px;
     font-size: 24px;
+}
+
+.entrar input:hover {
+    background-color: blue;
+}
+
+input:focus {
+    border: 2px solid lightblue;
+}
+
+form input {
+    outline: none;
 }
 
 /*REGISTRO*/
@@ -241,6 +264,18 @@ h1 {
 #registrar {
     background-color: #1CD1B0;
 }
+
+#reset:hover {
+    background-color: black;
+    color: white;
+}
+
+#registrar:hover {
+    background-color: blue;
+}
+
+
+
 /*CONTACTO*/
 .contacto input{
     height: 60px;
