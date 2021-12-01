@@ -28,7 +28,6 @@ header {
     align-items: center;
     height: 174px;
     margin: 20px 50px;
-    width: 100vw;
 }
 
 header img {
@@ -86,7 +85,6 @@ header img {
 .title-container {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
     height: 525px;
     margin-bottom: 60px;
 }
@@ -95,10 +93,10 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 439px;
+    max-width: 439px;
 }
 
-.title-container img {
+.title-img {
     Width: 580px;
     height: 525px;
 }
@@ -125,7 +123,6 @@ p {
 .about-container {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
     height: 549px;
 }
 
@@ -196,7 +193,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;
     height: 478px;
     margin-bottom: 140px;
     margin-top: 132.5px;
@@ -255,14 +251,20 @@ h2 {
 /* START */
 
 .start {
-    width: 100vw;
     height: 224px;
     background: #F3613C;
-    background-image: url('imagenes\bg-simplify-section-desktop.svg');
+}
+
+.start-img {
+    background-image: url('/imagenes/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 18em -8em;
+    height: 224px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .start p {
     font-weight: bold;
@@ -293,14 +295,6 @@ h2 {
 #button:hover {
     opacity: 0.8;
     cursor: pointer;
-}
-
-.start img {
-    width: 100vw;
-    height: 224px;
-    position: absolute;
-    right: -306px;
-    z-index: 1;
 }
 
 /* Footer */
@@ -438,6 +432,11 @@ form input:invalid {
 @media screen and (max-width: 375px) {
     header {
         display: flex;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 20vw;
     }
 
     .nav-bar {
@@ -453,4 +452,20 @@ form input:invalid {
         flex-grow: 1;
     }
 
+    .title-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title-img {
+        height: 50%;
+        margin-top: 50px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
