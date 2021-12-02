@@ -7,17 +7,22 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-image: url('/imagenes/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-position-x: 739px;
-    background-position-y: -122PX;
 }
 
-#img-fondo {
-    position: absolute;
-    top: 1112px;
-    left: -34.93vw;
-    z-index: -1;
+.img-back {
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 105%;
+    background-position-y: 130%;
+}
+
+.img-back2 {
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: -70%;
+    background-position-y: 90%;
 }
 
 /* Header */
@@ -97,8 +102,8 @@ header img {
 }
 
 .title-img {
-    Width: 580px;
-    height: 525px;
+    Width: 50%;
+    height: auto;
 }
 
 h1 {
@@ -113,7 +118,8 @@ p {
     font-weight: 500;
     font-size: 16.5584px;
     line-height: 157.1%;
-    color: #000000;
+    line-height: 26px;
+    color: #B3B2B7;
     margin-bottom: 28px;
     margin-top: 28px;
 }
@@ -258,7 +264,7 @@ h2 {
 .start-img {
     background-image: url('/imagenes/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
-    background-position: 18em -8em;
+    background-position: 17em -8em;
     height: 224px;
     display: flex;
     justify-content: space-around;
@@ -326,6 +332,7 @@ i {
 
 i:hover {
     color: #F3613C;
+    cursor: pointer;
 }
 
 
@@ -390,10 +397,15 @@ form input {
     outline: none;
 }
 
-form input:invalid {
+#validation::after {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    color: red;
+    font-size: 10px;
     content: "Please insert a valid email";
-    border: red 1px solid;
 }
+
 
 #go {
     width: 63px;
@@ -429,7 +441,7 @@ form input:invalid {
     margin-left: 55px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     header {
         display: flex;
         justify-content: space-between;
