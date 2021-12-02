@@ -335,6 +335,11 @@ i:hover {
     cursor: pointer;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
 
 .nav1 {
     display: flex;
@@ -406,7 +411,6 @@ form input {
     content: "Please insert a valid email";
 }
 
-
 #go {
     width: 63px;
     height: 42px;
@@ -439,6 +443,10 @@ form input {
     color: #8C8C94;
     margin-bottom: 15px;
     margin-left: 55px;
+}
+
+#copy-mobile {
+    display: none;
 }
 
 @media screen and (max-width: 376px) {
@@ -480,4 +488,70 @@ form input {
         flex-direction: column;
         align-items: center;
     }
+
+    .start {
+        height: 350px;
+    }
+
+    .start p {
+        margin: 10px;
+        padding-top: 10px;
+        width: 350px;
+        text-align: center;
+    }
+
+    #button {
+        margin-left: -1px;
+        margin-top: 5px;
+    }
+
+    .start-img {
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position-x: 35%;
+        background-position-y: 730%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 450px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: space-around;
+        font-size: 30px;
+    }
+
+    .iconos img {
+        align-self: center;
+        width: 40vw;
+        padding-top: 25px;
+    }
+
+    .form {
+        align-self: center;
+    }
+
+    .form span {
+        display: none;
+    }
+
+    #copy-mobile {
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 18px;
+        color: #8C8C94;
+        justify-self: center;
+    }
+
+
+
 }
