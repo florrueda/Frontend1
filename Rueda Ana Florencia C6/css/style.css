@@ -13,8 +13,8 @@ body {
     background-image: url('/imagenes/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position-x: 105%;
-    background-position-y: 130%;
+    background-position-x: 121%;
+    background-position-y: 200%;
 }
 
 .img-back2 {
@@ -79,6 +79,7 @@ header img {
 .button:hover {
     opacity: 0.6;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .fa-bars:before {
@@ -99,16 +100,18 @@ header img {
     flex-direction: column;
     justify-content: center;
     max-width: 439px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.title-img {
-    Width: 50%;
+.title-img img {
+    width: 100%;
     height: auto;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 58px;
+    font-size: 48px;
     line-height: 66px;
     letter-spacing: -0.035em;
     color: #232C50;
@@ -254,6 +257,11 @@ h2 {
     top: -42px; /* 6.45rem;  */
 }
 
+.testimony i {
+    display: none;
+}
+
+
 /* START */
 
 .start {
@@ -301,6 +309,7 @@ h2 {
 #button:hover {
     opacity: 0.8;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -333,6 +342,7 @@ i {
 i:hover {
     color: #F3613C;
     cursor: pointer;
+    transform: scale(1.3);
 }
 
 .nav {
@@ -361,6 +371,7 @@ i:hover {
 
 .nav1 a:hover {
     color:#F3613C;
+    cursor: pointer;
 }
 
 .nav2 {
@@ -383,6 +394,7 @@ i:hover {
 
 .nav2 a:hover {
     color: #F3613C;
+    cursor: pointer;
 }
 
 form {
@@ -402,15 +414,6 @@ form input {
     outline: none;
 }
 
-#validation::after {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    color: red;
-    font-size: 10px;
-    content: "Please insert a valid email";
-}
-
 #go {
     width: 63px;
     height: 42px;
@@ -423,11 +426,13 @@ form input {
     font-weight: 500;
     font-size: 13.1806px;
     line-height: 19px;
+    margin-top: 9px;
 }
 
 #go:hover {
     opacity: 0.6;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .form {
@@ -444,49 +449,163 @@ form input {
     margin-bottom: 15px;
     margin-left: 55px;
 }
+.validation {
+    display: flex;
+    flex-direction: column;
+}
+
+#validation:invalid {
+    border-color: red;
+    margin-bottom: 10px;
+}
+
+#validation:invalid + span::after {
+    content: "Please insert a valid email";
+    color: red;
+    margin-left: -45px;
+}
 
 #copy-mobile {
     display: none;
 }
 
 @media screen and (max-width: 376px) {
+    .img-back {
+        background-size: 130%;
+        background-position-x: 5%;
+        background-position-y: -10%;
+    }
+    
+    .img-back2 {
+        background-size: 130%;
+        background-position-x: 1%;
+        background-position-y: -20%;
+    }
+    
     header {
         display: flex;
         justify-content: space-between;
+        margin: 0;
     }
 
     header img {
-        width: 20vw;
+        width: 40vw;
+        padding-left: 15px;
     }
 
     .nav-bar {
         display: none;
     }
 
-    .button {
+    #button-header {
         display: none;
     }
 
     .fa-bars:before {
         display: block;
-        flex-grow: 1;
+        font-size: 30px;
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        line-height: 46px;
+        letter-spacing: 0;
+    }
+    
+    p {
+        font-size: 14px;
+        text-align: center;
     }
 
     .title-container {
+        height: 600px;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
     }
 
     .title-img {
-        height: 50%;
-        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 375px;
     }
 
     .about-container {
+        height: 900px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .about-title h2 {
+        width: 350px;
+        padding: 10px;
+    }
+
+
+    .about-title p {
+        width: 350px;
+        padding: 10px;
+    }
+
+    .about h3 {
+        background-color: rgba(242, 95, 58, 0.2);
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .about p {
+        text-align: justify;
+        padding-left: 0px;
+        width: 350px;
+        font-size: 14px;
+    }
+
+
+    .testimony {
+        height: 500px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .icono-carrousel {
+        display: block;
+        text-align: center;
+        background-color: black;
+        color: #F3613C;
+        font-size: 16px;
+        border: #F3613C solid 2px;
+    }
+
+    #carrousel {
+        display: none
+    }
+
+    #visible {
+        width: 300px;
+    }
+
+    .cards p{
+        font-size: 14px;
+        width: 300px;
+        height: 78px;
     }
 
     .start {
@@ -513,6 +632,7 @@ form input {
         justify-content: center;
         background-position-x: 35%;
         background-position-y: 730%;
+        background-image: url('/imagenes/bg-simplify-section-mobile.svg');
     }
 
     footer {
@@ -540,18 +660,27 @@ form input {
         align-self: center;
     }
 
-    .form span {
-        display: none;
+    #validation:invalid + span::after {
+        content: "Please insert a valid email";
+        color: red;
+    }
+
+    #go {
+        margin-top: 15px;
     }
 
     #copy-mobile {
+        display: block;
         font-weight: 500;
         font-size: 12.5px;
         line-height: 18px;
         color: #8C8C94;
         justify-self: center;
+        margin-top: 15px;
     }
 
-
+    .copy {
+        display: none;
+    }
 
 }

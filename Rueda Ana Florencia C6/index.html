@@ -27,7 +27,7 @@
                 <li><a href="">Community</a></li>
             </ul>
         </nav>
-        <input type="button" class="button" value="Get Started">
+        <input type="button" class="button" value="Get Started" id="button-header">
         <i class="fas fa-bars"></i>
     </header>
     
@@ -48,8 +48,8 @@
 <div class="img-back2">
     <section class="about-container">
         <div class="about-title">
-            <h2>What´s different about Manage?</h2>
-            <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            <h2>What’s different about Manage?</h2>
+            <p>Manage provides all the functionality your teams needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
         </div>
         <div class="about">
             <div id="about1">
@@ -73,21 +73,21 @@
     <section class="testimony">
         <h2>What they've said</h2>
         <div class="cards_container"> 
-            <div class="cards">
+            <div class="cards" id="carrousel">
                 <img src="imagenes\avatar-anisha.png" alt="Anisha Li Testimonio">
                 <h3>Anisha Li</h3>
                 <p>
                     “Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
                 </p>
             </div>
-            <div class="cards">
+            <div class="cards" id="visible">
                 <img src="imagenes\avatar-ali.png" alt="Ali Bravo Testimonio">
                 <h3>Ali Bravo</h3>
                 <p>
                     “We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”
                 </p>
             </div>
-            <div class="cards">
+            <div class="cards" id="carrousel">
                 <img src="imagenes\avatar-richard.png" alt="Richard Watts Testimonio">
                 <h3>Richard Watts</h3>
                 <p>
@@ -95,6 +95,7 @@
                 </p>
             </div>
         </div>
+        <i class="fal fa-ellipsis-h-alt icono-carrousel"></i>
         <input type="button" class="button" value="Get Started">
     </section>
 </div>
@@ -108,6 +109,7 @@
 
     <footer>
         <div class="iconos">
+            <span id="copy-mobile">Copyright 2020. All Rights Reserved</span>
             <img src="imagenes\Nuevo proyecto.svg" alt="Logo de la empresa">
             <div>
                 <i class="fab fa-facebook-square"></i>
@@ -137,12 +139,14 @@
         </div>
         <div class="form">
             <form action="" method="POST">
-                <input type="email" id="validation" placeholder="Update in your inbox...">
+                <div class="validation">
+                    <input type="email" id="validation" placeholder="Update in your inbox...">
+                    <span class="validation"></span>
+                </div>
                 <input type="submit" id="go" value="Go">
             </form>
-            <span>Copyright 2020. All Rights Reserved</span>
+            <span class="copy">Copyright 2020. All Rights Reserved</span>
         </div>
-        <span id="copy-mobile">Copyright 2020. All Rights Reserved</span>
     </footer>
 </body>
 </html>
