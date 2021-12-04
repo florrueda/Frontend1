@@ -10,7 +10,7 @@ body {
 }
 
 .img-back {
-    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 121%;
@@ -18,7 +18,7 @@ body {
 }
 
 .img-back2 {
-    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: -70%;
@@ -270,7 +270,7 @@ h2 {
 }
 
 .start-img {
-    background-image: url('/imagenes/bg-simplify-section-desktop.svg');
+    background-image: url('../imagenes/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
     background-position: 17em -8em;
     height: 224px;
@@ -478,8 +478,8 @@ form input {
     
     .img-back2 {
         background-size: 130%;
-        background-position-x: 1%;
-        background-position-y: -20%;
+        background-position-x: -50%;
+        background-position-y: -30%;
     }
     
     header {
@@ -549,11 +549,15 @@ form input {
         justify-content: center;
     }
 
+    .about-title {
+        width: 375px;
+        margin-right: 0px;
+    }
+
     .about-title h2 {
         width: 350px;
         padding: 10px;
     }
-
 
     .about-title p {
         width: 350px;
@@ -564,6 +568,7 @@ form input {
         background-color: rgba(242, 95, 58, 0.2);
         padding-top: 7px;
         padding-bottom: 7px;
+        width: 375px;
     }
 
     .about p {
@@ -573,6 +578,13 @@ form input {
         font-size: 14px;
     }
 
+    .about {
+        width: 375px;
+    }
+
+    h3 {
+        width: 375px;
+    }
 
     .testimony {
         height: 500px;
@@ -585,13 +597,12 @@ form input {
         text-align: center;
     }
 
-    .icono-carrousel {
+    .testimony i {
         display: block;
-        text-align: center;
-        background-color: black;
+        font-size: 30px;
         color: #F3613C;
-        font-size: 16px;
-        border: #F3613C solid 2px;
+        text-align: center;
+        padding-right: 15px;
     }
 
     #carrousel {
@@ -600,6 +611,10 @@ form input {
 
     #visible {
         width: 300px;
+    }
+
+    .cards h3 {
+        text-align: center;
     }
 
     .cards p{
@@ -630,9 +645,9 @@ form input {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-position-x: 35%;
+        background-size: auto;
+        background-position-x: 30%;
         background-position-y: 730%;
-        background-image: url('/imagenes/bg-simplify-section-mobile.svg');
     }
 
     footer {
