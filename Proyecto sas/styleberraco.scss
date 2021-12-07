@@ -1,0 +1,45 @@
+$colordefondo: rgb(255, 56, 56);
+
+header{
+    p{
+        color: $colordefondo;
+    }
+
+    nav {
+        width: 500px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#boton {
+    background-color: green;
+    &-secundario {
+        background-color: blue;
+    }
+    &-final {
+        background-color: red;
+    }
+    &:hover {
+        color: black;
+    }
+}
+
+section {
+    p, h2 {
+        background-color: $colordefondo;
+    }
+}
+
+$letraArial: 'Arial';
+
+h2 {
+    font-family: $letraArial;
+}

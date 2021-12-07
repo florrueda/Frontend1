@@ -655,6 +655,7 @@ form input {
         flex-direction: column-reverse;
         justify-content: space-around;
         height: 450px;
+        width: auto;
     }
 
     .iconos {

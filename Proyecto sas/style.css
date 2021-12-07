@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+header p {
+    color: rgb(192, 61, 61);
+    font-size: 2rem;   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border: #FFF;
+    border-radius: 10px;
+}
+#boton {
+    background-color: green;
+}
+
+#boton-secundario {
+    background-color: blue;
+}
+
+#boton-final {
+    background-color: red
+}
+
+section h2 {
+    background-color: rgb(255, 56, 56);
+    font-size: 3rem;
+}
+
+section p {
+    background-color: rgb(255, 56, 56);
+    color: #FFF;
+}
+
