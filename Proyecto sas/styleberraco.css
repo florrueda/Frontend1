@@ -1,14 +1,21 @@
 header p {
   color: #ff3838;
 }
+
 header nav {
   width: 500px;
 }
+
 header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
+
 header nav ul a {
   color: white;
   text-decoration: none;
@@ -17,12 +24,15 @@ header nav ul a {
 #boton {
   background-color: green;
 }
+
 #boton-secundario {
   background-color: blue;
 }
+
 #boton-final {
   background-color: red;
 }
+
 #boton:hover {
   color: black;
 }
@@ -33,4 +43,5 @@ section p, section h2 {
 
 h2 {
   font-family: "Arial";
-}/*# sourceMappingURL=styleberraco.css.map */
+}
+/*# sourceMappingURL=styleberraco.css.map */
